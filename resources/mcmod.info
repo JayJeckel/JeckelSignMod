@@ -1,0 +1,25 @@
+{
+	"modListVersion": 2,
+	"modList":
+	[
+		{
+			"modid": "jeckelsignmod",
+			"name": "JeckelSignMod",
+			"description": "JeckelSignMod gives players the ability to edit signs that have already been placed in the world. This is accomplished through the addition of several sign editing related tools that allow editing, erasing, copying, cutting, and pasting of text.",
+			"version": "${version}",
+			"mcversion": "${mcversion}",
+			"forgeversion": "${forgeversion}",
+			"url": "http://minecraft.jeckelland.site88.net/mods/${name}/",
+			"updateUrl": "",
+			"authorList": ["JayJeckel"],
+			"credits": "",
+			"logoFile": "banner.png",
+			"screenshots": [],
+			"parent": "",
+			"requiredMods": [ "Forge" ],
+			"dependencies": [],
+			"dependants": [],
+			"useDependencyInformation": true
+		}
+	]
+}

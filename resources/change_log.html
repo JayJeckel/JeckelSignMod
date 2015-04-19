@@ -1,0 +1,128 @@
+
+<header><h3>Version: 2.2.0-beta</h3></header>
+
+<ul>
+<li>Mod: Updated to Forge 10.13.2.1291.</li>
+<li>Fix: Recipes are now registered in the initialize phase instead of pre-initialize.</li>
+<li>Code: General cleanup.</li>
+</ul>
+
+<header><h3>Version: 2.1.5-beta</h3></header>
+
+<ul>
+<li>Fix: Update Checking will now be done asynchronously, as was intended.</li>
+<li>Fix: Hopefully fixed issue where the config screen was not available for some people.</li>
+</ul>
+
+<header><h3>Version: 2.1.4-beta</h3></header>
+
+<ul>
+<li>Note: This update does NOT affect the content or game play features of the mod.</li>
+<li>Code: Implemented prototype system to separate config values from config handling.</li>
+</ul>
+
+<header><h3>Version: 2.1.3-beta</h3></header>
+
+<ul>
+<li>Fix: Update checker call to client method from server, causing mod info command not to work, has been fixed.</li>
+</ul>
+
+<header><h3>Version: 2.1.2-beta</h3></header>
+
+<ul>
+<li>Note: This update does NOT affect the content or game play features of the mod.</li>
+<li>Mod: Updated to Forge 10.13.2.1230.</li>
+<li>New: Implemented mod config, disableable version checker, and '/jeckeldoormod' mod info command.</li>
+<li>License: Added blurb about use of the mod in mod packs.</li>
+</ul>
+
+<header><h3>Version: 2.1.1-beta</h3></header>
+
+<ul>
+<li>Mod: Added proper information in the license file to credit the sources of the sign tool images. Apologies for forgetting to include them in the previous version.</li>
+<li>Fix: Sign tools are missing their lang file entries.</li>
+<li>Compatibility: Implemented lang file localization for chat messages sent when using sign tools.</li>
+</ul>
+
+<header><h3>Version: 2.1.0-beta</h3></header>
+
+<ul>
+<li>Mod: Updated to Minecraft 1.7.10 and Forge 10.13.1.1217.</li>
+<li>Mod: Implemented a default Forge config screen to modify any future mod settings.</li>
+<li>Mod: Removed all coremod related aspects, making this a normal mod. This had no effect on mod features.</li>
+<li>Removed: Temporarily removed damage from sign tools. This feature will be reimplemented in a future version.</li>
+</ul>
+
+<header><h3>Version: 1.0.6</h3></header>
+
+<ul>
+<li>Update: Forge updated to 9.10.0.835</li>
+<li>Fix: Child mod wasn't loading because Forge changed how coremods with other normal mods in the same jar are read.</li>
+</ul>
+
+<header><h3>Version: 1.0.5</h3></header>
+
+<ul>
+<li>Updated: Forge 9.10.0.804.</li>
+<li>Fix: Server crash from setEditable method being called on server when it is client only.</li>
+<li>Change: Eraser and copy paper now provide no damage modifier, edit pencil still gives 1, and cut scissors give 2.</li>
+<li>Code: The default BlockSign is no longer replaced, instead the logic is handled in the player interact event.</li>
+<li>Code: Added an internal child coremod to make the TileEntitySign.isEditable field public. This is because someone had the bright idea to make setEditable method client only.</li>
+</ul>
+
+<header><h3>Version: 1.0.4</h3></header>
+
+<ul>
+<li>Updated: Minecraft 1.6.2.</li>
+<li>Updated: Forge 9.10.0.789.</li>
+<li>Major Change: Removed dependency on JeckelBaseMod. It was only using two JBM classes, so wasn't really necessary.</li>
+<li>New: Message is now displayed after sign text is erased.</li>
+<li>New: Message is displayed if sign doesn't have text for a tool to copy or cut.</li>
+<li>Change: Sign tool durability and text nbt parent tag renamed from JeckelSignMod to signtool. Sign tool text will be lost and durability will be reset.</li>
+<li>Change: Default sign tool durability increased from 20 to 50.</li>
+<li>Change: Durability costs for using sign tools has doubled from 1 to 2, with a couple exceptions. Copying text from a sign to a to the copy tool is free. Cutting text from a sign to a cut tool costs 1 and erasing a sign also costs 1. Everything else is 2.</li>
+<li>New Options: The max durability and the durability cost of using items can now be set in the config file on a per tool basis. For things like the copy and cut tool, different costs can be set for copying text from a sign to the tool, pasting text to from the tool, and clearing the tool's stored text.</li>
+<li>New Options: A new boolean option is now available to turn durability off for all tools.</li>
+<li>Removed Options: The tool max durability option has been removed in favor of the new boolean version.</li>
+<li>Changed Options: The boolean options to allow/disallow individual tool re<ipes have all been renamed to follow convention with the other new options.</li>
+<li>Misc: Huge overhaul on most of the code. This may bring a few bugs.</li>
+<li>Removed: Got rid of the mcmod.info file, it became more hassle than it was worth.</li>
+</ul>
+
+<header><h3>Version: 1.0.3a</h3></header>
+
+<ul>
+<li>Fix: Sign edit pencil now accepts coal or charcoal in its recipe, as was intended.</li>
+</ul>
+
+<header><h3>Version: 1.0.3</h3></header>
+
+<ul>
+<li>Updated to JeckelBaseMod v0.0.4 to bring the mod in line with lasted base mod version before transition to MC 1.6.</li>
+<li>A warning message will be displayed when attempting to erase an empty sign.</li>
+<li>Fixed issue were a sign tool could paste text equal to the sign's current text. This wasted uses and will now instead give a warning message when attempted.</li>
+<li>Fixed a few issues where sign tool durability might be decreased when durability is disabled.</li>
+</ul>
+
+<header><h3>Version: 1.0.2</h3></header>
+
+<ul>
+<li>Modified recipes for sign edit pencil and sign cut scissors. Both had their shape changed and the latter now requires two more iron ingots.</li>
+<li>Sign tools can now have a limited number of uses. This can be disabled and the number of uses controlled by setting a config value.</li>
+<li>Updated to JeckelBaseMod v0.0.3.</li>
+</ul>
+
+<header><h3>Version: 1.0.1</h3></header>
+
+<ul>
+<li>Recipes that require slimeballs now have an alternate with rubber replacing the slimeballs.</li>
+<li>Add mcmod.info file.</li>
+</ul>
+
+<header><h3>Version: 1.0.0</h3></header>
+
+<ul>
+<li>Initial release.</li>
+<li>Replaced Block.signPost and Block.signWall with mod's BlockEditableSign.</li>
+<li>Added edit, erase, copy, and cut tools.</li>
+</ul>

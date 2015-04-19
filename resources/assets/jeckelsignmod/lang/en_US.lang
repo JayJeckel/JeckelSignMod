@@ -1,0 +1,23 @@
+
+item.tool.sign.copy.name=Copy Sign Tool
+item.tool.sign.cut.name=Cut Sign Tool
+item.tool.sign.edit.name=Edit Sign Tool
+item.tool.sign.erase.name=Erase Sign Tool
+
+item.tool.sign.copy.tooltip=Click a sign to copy the sign text.\nClick other signs to paste the stored text.\nSneak click to clear the stored text.
+item.tool.sign.cut.tooltip=Click a sign to cut the sign text.\nClick other signs to paste the stored text.\nSneak click to clear the stored text.
+item.tool.sign.edit.tooltip=Click a sign to edit the sign text.
+item.tool.sign.erase.tooltip=Click a sign to erase the sign text.
+
+item.tool.sign.copy.state.true.result.true.text=Text pasted to the sign.
+item.tool.sign.copy.state.true.result.false.text=Can't paste the same text.
+item.tool.sign.copy.state.false.result.true.text=Text copied from the sign.
+item.tool.sign.copy.state.false.result.false.text=No sign text to copy.
+
+item.tool.sign.cut.state.true.result.true.text=Text pasted to the sign.
+item.tool.sign.cut.state.true.result.false.text=Can't paste the same text.
+item.tool.sign.cut.state.false.result.true.text=Text cut from the sign.
+item.tool.sign.cut.state.false.result.false.text=No sign text to cut.
+
+item.tool.sign.erase.result.true.text=Sign text erased.
+item.tool.sign.erase.result.false.text=No sign text to erase.
